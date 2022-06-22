@@ -9,6 +9,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.AccountsPage;
 import pages.DashboardPage;
+import pages.DatabasePage;
 import pages.LoginPage;
 import pages.TestBase;
 
@@ -16,17 +17,21 @@ public class NewAccountStepsDefinition extends TestBase {
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
 	AccountsPage accountsPage;
+	DatabasePage databasePage;
+
 	@Before
 	public void beforeRun() {
 		init();
 		loginPage = PageFactory.initElements(driver, LoginPage.class);
 		dashboardPage = PageFactory.initElements(driver, DashboardPage.class);
 		accountsPage = PageFactory.initElements(driver, AccountsPage.class);
+		databasePage = new DatabasePage();
 		}
 
 	@Given("^User is on techfios login page$")
 	public void user_is_on_techfios_login_page() {
 		driver.get("https://www.techfios.com/billing/?ng=admin");
+
 	}
 
 	@When("^User enters username as \"([^\"]*)\"$")
@@ -37,6 +42,22 @@ public class NewAccountStepsDefinition extends TestBase {
 	@When("^User enters password as \"([^\"]*)\"$")
 	public void user_enters_password_as(String password) {
 		loginPage.enterPassword(password);
+	}
+
+	@When("^User enters \"([^\"]*)\" from Techfios database$")
+	public void user_enters_from_Techfios_database(String data) {
+		switch(data) {
+		case "username":
+			System.out.println("Username from DB: " + databasePage.getDataFromDB("username")); // To just check
+			loginPage.enterUsername(databasePage.getDataFromDB("username"));
+			break;
+		case "password": 
+			System.out.println("Username from DB: " + databasePage.getDataFromDB("password")); //To just check
+			loginPage.enterPassword(databasePage.getDataFromDB("password"));
+			break;
+		default:
+				System.out.println("Invalid data");
+		}
 	}
 
 	@When("^User clicks signin button$")

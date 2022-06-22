@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = {"classpath:features"},
 		glue = "steps",
-//		tags = "@DBScenario1",
+		tags = "@DBScenario1",
 		monochrome = true,
 		dryRun = false,
 		plugin = {
@@ -17,6 +17,6 @@ import cucumber.api.junit.Cucumber;
 				"html:target/cucumber",
 				"json:target/cucmber"})
 
-public class NewAccountRunner {
+public class TechfiosLoginUsingDatabaseRunner {
 
 }

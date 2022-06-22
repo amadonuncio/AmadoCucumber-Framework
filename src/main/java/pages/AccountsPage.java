@@ -43,8 +43,8 @@ public class AccountsPage {
 		}
 	}
 
-	public void enterInitialBalance(int InitialBalance) {
-		INITIAL_BALANCE_ELEMENT.sendKeys(String.valueOf(InitialBalance));
+	public void enterInitialBalance(int initialBalance) {
+		INITIAL_BALANCE_ELEMENT.sendKeys(String.valueOf(initialBalance));
 		try {
 			Thread.sleep(1500);
 		}catch(InterruptedException e) {
