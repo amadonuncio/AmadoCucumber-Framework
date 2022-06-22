@@ -1,4 +1,5 @@
+pages\LoginPage.class
 pages\AccountsPage.class
 pages\DashboardPage.class
-pages\LoginPage.class
+pages\DatabasePage.class
 pages\TestBase.class

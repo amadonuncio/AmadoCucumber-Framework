@@ -1,2 +1,3 @@
 runners\NewAccountRunner.class
+runners\TechfiosLoginUsingDatabaseRunner.class
 steps\NewAccountStepsDefinition.class
