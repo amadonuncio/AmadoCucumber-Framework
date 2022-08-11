@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = {"classpath:features"},
 		glue = "steps",
-//		tags = "@DBScenario1",
+		tags = "@Scenario1",
 		monochrome = true,
 		dryRun = false,
 		plugin = {

@@ -1,0 +1,310 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2335769900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewAccountStepsDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User should be able to login with valid credentials and create a new account",
+        "description": "",
+        "id": "techfios-bank-and-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials-and-create-a-new-account;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1142092200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on techfios login page",
+            "match": {
+              "location": "NewAccountStepsDefinition.user_is_on_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1636144300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 25
+                }
+              ],
+              "location": "NewAccountStepsDefinition.user_enters_username_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1604120000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 25
+                }
+              ],
+              "location": "NewAccountStepsDefinition.user_enters_password_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2246904500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks signin button",
+            "match": {
+              "location": "NewAccountStepsDefinition.user_clicks_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15324100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "NewAccountStepsDefinition.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1584046500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks Bank\u0026Cash button",
+            "match": {
+              "location": "NewAccountStepsDefinition.user_clicks_Bank_Cash_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1807997900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks New Account button",
+            "match": {
+              "location": "NewAccountStepsDefinition.user_clicks_New_Account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1611423400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters Account Title as \"Checkings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Checkings",
+                  "offset": 30
+                }
+              ],
+              "location": "NewAccountStepsDefinition.user_enters_Account_Title_as(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1614665300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters Description as \"Buying things\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buying things",
+                  "offset": 28
+                }
+              ],
+              "location": "NewAccountStepsDefinition.user_enters_Description_as(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1604495700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters Initial Balance as \"100.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100.00",
+                  "offset": 32
+                }
+              ],
+              "location": "NewAccountStepsDefinition.user_enters_Initial_Balance_as(int)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1598331300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters Account Number as \"1939\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1939",
+                  "offset": 31
+                }
+              ],
+              "location": "NewAccountStepsDefinition.user_enters_Account_Number_as(int)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1642594700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters Contact Person as \"Amado Nuncio\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amado Nuncio",
+                  "offset": 31
+                }
+              ],
+              "location": "NewAccountStepsDefinition.user_enters_Contact_Person_as(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1593287300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters Phone as \"888888888\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "888888888",
+                  "offset": 22
+                }
+              ],
+              "location": "NewAccountStepsDefinition.user_enters_Phone_as(int)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1619455100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters Internet Banking URL as \"amado.edu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "amado.edu",
+                  "offset": 37
+                }
+              ],
+              "location": "NewAccountStepsDefinition.user_enters_Internet_Banking_URL_as(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2594472700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks submit button",
+            "match": {
+              "location": "NewAccountStepsDefinition.user_clicks_submit_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Feature"
+          },
+          {
+            "line": 4,
+            "name": "@Scenario1"
+          }
+        ]
+      }
+    ],
+    "name": "TechFios bank and cash new account functionality",
+    "description": "",
+    "id": "techfios-bank-and-cash-new-account-functionality",
+    "keyword": "Feature",
+    "uri": "features/TechfiosBankAndCashNewAccount.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Feature"
+      }
+    ]
+  }
+]
